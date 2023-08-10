@@ -71,7 +71,7 @@ export function PlayerSummary() {
         filters={state}
         filterDispatcher={dispatch}
       />
-      { data==undefined ? (
+      { isLoading ? (
         state["prevData"] == undefined ? (
           <SummaryTable
             apiData={skeletonTableData}
